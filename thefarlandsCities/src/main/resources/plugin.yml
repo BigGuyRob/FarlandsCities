@@ -1,0 +1,30 @@
+name: ThefarlandsCities
+version: ${project.version}
+main: thefarlandscities.cities.Cities
+api-version: 1.18
+description: MongoDB - Dynmap - Spigot - love
+commands:
+  flsetmark:
+    description: If there is a City defined that is NOT on the Dynmap this will add them.
+    usage: /<command>
+    aliases: [fl]
+  permit:
+    description: permits players access to city
+    usage: /<command>
+    aliases: [permit]
+  depermit:
+    description: remove permit access from player
+    usage: /<command>
+    aliases: [depermit]
+  permitremoveadmin:
+    description: removes a player as an admin from city, does not effect player permit status
+    usage: /<command>
+    aliases: [permitremoveadmin]
+  permitaddadmin:
+    description: adds a player as an admin to city, player must have a permit first
+    usage: /<command>
+    aliases: [permitaddadmin]
+  trace:
+    description: traces borders of city you are in
+    usage: /<command>
+    aliases: [trace]
