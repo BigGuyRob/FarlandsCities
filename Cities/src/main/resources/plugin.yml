@@ -1,0 +1,4 @@
+name: Cities
+version: ${project.version}
+main: bigguyrob.farlands.Farlands
+api-version: 1.18
