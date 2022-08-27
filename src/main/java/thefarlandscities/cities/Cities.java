@@ -36,7 +36,7 @@ public final class Cities extends JavaPlugin {
         // Plugin startup logic
 
         saveDefaultConfig();
-        mongoClient = MongoClients.create("mongodb+srv://fl:fl@cluster0.gyp00.mongodb.net/whitelist?retryWrites=true&w=majority");
+        mongoClient = MongoClients.create("MONGODBSTRING");
         MongoCollection<Document> collection = mongoClient.getDatabase("whitelist").getCollection("cities");
         List<Document> cities = (List<Document>) collection.find().into(
                 new ArrayList<Document>());
