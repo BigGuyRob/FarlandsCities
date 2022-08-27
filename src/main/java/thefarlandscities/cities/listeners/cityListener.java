@@ -51,7 +51,13 @@ public class cityListener extends BukkitRunnable {
             for(City city : cityList){
                 if(city.getPolygon().contains(xt,zt)){
                     city.getCityBar().addPlayer(player);
+                    if(!city.getCityBar().getPlayers().contains(player)) {
+                        player.sendMessage("Welcome to " + city.getName());
+                    }
                 }else{
+                    if(city.getCityBar().getPlayers().contains(player)) {
+                        player.sendMessage("Leaving to " + city.getName());
+                    }
                     city.getCityBar().removePlayer(player);
                     player.setCanPickupItems(true);
                 }

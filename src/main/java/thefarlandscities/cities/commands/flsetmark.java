@@ -55,9 +55,9 @@ public class flsetmark implements CommandExecutor {
                     p.setFlying(true);
                     int ix = Integer.parseInt(xi.get(i));
                     int iy = Integer.parseInt(y.get(i));
-                    //p.teleport(new Location(p.getWorld(), (double) ix, 100 ,(double) iy));
-                    Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "/dmarker addcorner " + ix + " 0 " + iy + " TheFarlands");
-                    //p.chat("/dmarker addcorner " + ix + " 0 " + iy + " TheFarlands");
+                    p.teleport(new Location(p.getWorld(), (double) ix, 100 ,(double) iy));
+                   // Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "/dmarker addcorner " + ix + " 0 " + iy + " TheFarlands");
+                    p.chat("/dmarker addcorner ");
                 }
                 plugin.deregisterListener();
                 plugin.getCitybars(cities);
