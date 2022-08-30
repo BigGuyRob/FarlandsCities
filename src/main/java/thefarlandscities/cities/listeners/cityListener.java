@@ -56,7 +56,7 @@ public class cityListener extends BukkitRunnable {
                     }
                 }else{
                     if(city.getCityBar().getPlayers().contains(player)) {
-                        player.sendMessage("Leaving to " + city.getName());
+                        player.sendMessage("Now leaving " + city.getName());
                     }
                     city.getCityBar().removePlayer(player);
                     player.setCanPickupItems(true);
